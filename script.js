@@ -41,8 +41,8 @@ function startCombat(name){
         console.log(`${name} hes been defeated and Grant has ${grant.numberOfWins} wins!`);
          }
       if (player.numberOfWins === 3 && player.playerHP >= 0) {
-        console.log(`${name} wins the battle`);
-       } else if (grant.numberOfWins && player.playerHP <= 0 ) {
+        console.log(`${name} wins the battle!`);
+       } else if (grant.numberOfWins < 3 && player.playerHP <= 0 ) {
         console.log (`Grant the Mighty Chicken wins the battle!`);
         }
      }
